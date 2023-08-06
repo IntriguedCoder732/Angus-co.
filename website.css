@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#7772B6, #F7AF7E);
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+nav{
+    width: 100%;
+    position: absolute;
+    padding: 20px 4%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+   width: 100px;
+}
+nav ul li{
+    list-style: none;
+    display: inline;
+    margin-left: 40px;
+}
+
+@keyframes cool_transformation{
+    
+    
+    50%{transform: translateY(-5px);}
+    100%{transform: translateY(0px);}
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:brown;
+    font-size: 17px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+nav ul li a:hover{
+    animation-name: cool_transformation;
+    animation-duration: 0.5s;
+    color: orangered;
+    border-color: #7772B6;
+    border: 8px soild #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6f5baa;
+    
+
+}
+
+.logo:hover {
+    background-color: #6f5baa;
+    
+    border-radius: 55px;
+
+}
+
+.content {
+    width: 50%;
+    margin: auto;
+}
+.content h1{
+    font-size: 50px;
+    font-weight: 10;
+    margin-top: 10px;
+}
+
+.active {
+    border: 3px #7772B6 soild;
+    border-color: #7772B6;
+    padding: 10px 20px;
+    display: inline-block;
+    background-color: #544580;
+}
+
+.content p{
+    font-size: 30px;
+    font-weight: 5;
+}
+
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color: aliceblue;
+    font-size: 30px;
+    border: 2px solid aliceblue;
+    padding: 4px 35px;
+    border-radius: 50px;
+    margin-top: 50px;
+}
+
+.content a:hover{
+    text-decoration: none;
+    display: inline-block;
+    color: #bb7445;
+    font-size: 30px;
+    border: 2px solid #bb7445;
+    padding: 4px 35px;
+    border-radius: 50px;
+    margin-top: 50px;
+    animation-name: cool_transanimation;
+    animation-duration: 0.5s;
+}
+
+footer {
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    left: 0;   
+}
+
+.social_links a {
+    
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    justify-content: center;
+    margin: 0 10px;
+    flex: wrap;
+     
+}
+
+.social_links a i {
+    font-size: 2rem;
+}
+
+.social_links a i:hover{
+    animation-duration: 0.5s;
+    animation-name: cool_transformation;
+    color: #7772B6;
+    border-color: #fff;
+}
+
+@media screen and (max-width:600px){
+    .content p {
+        font-size: 22.5px;
+    }
+    .content h1 {
+        font-size: 40px;
+    }
+}
